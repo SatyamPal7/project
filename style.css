@@ -1,0 +1,111 @@
+
+.heading{
+	margin-top:-124px;
+}
+.tab{
+	margin-top:-20px;
+	background:black;
+	
+	height:50px;
+	width:1500px;
+}
+.tab input[type="button"]
+{
+	
+	border:none;
+	outline:none;
+	height:40px;
+	background:#c2786c	;
+	font-size:16px;
+	margin:5px 0px 0px 4px;
+	width:120px;
+	border-radius:5px;
+}
+.tab input[type="button"]:hover
+{
+	cursor:pointer;
+	background:#28B463;
+	color:white;
+}
+.login{
+	margin-top:5%;
+		width:400px;
+		height:500px;
+		background:#000;
+		color:#fff;
+		top:60%;
+		left:50%;
+		position:absolute;
+		transform:translate(-50%,-50%);
+		box-sizing:border-box;
+		opacity:0.8;
+		padding:70px 30px;
+		border-radius:30px;
+}
+.avatar{
+	height:130px;
+	width:130px;
+	border-radius:50%;
+	position:absolute;
+	top:-20%;
+	left:30%;
+
+}
+h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:25px;
+}
+.p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	font-size:20px;
+
+}
+.login input{
+	width:100%;
+margin-bottom:20px;
+}
+.login input[type="text"],input[type="Password"]
+{
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:white;
+	font-size:16px;
+}
+.login input[type="button"]
+{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	font-size:18px;
+}
+.login input[type="button"]:hover
+{
+	cursor:pointer;
+	background:green;
+	color:white;
+}
+.login a{
+	text-decoration:none;
+	font-size:15px;
+	line-height:20px;
+	color:darkgrey;
+}
+.login a:hover{
+	color:#ffc107;
+}
+.mark{
+	height:400px;
+	width:200px;
+	background:black
+}
+.main{
+	position:fixed;
+}
