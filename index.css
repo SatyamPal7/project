@@ -1,0 +1,172 @@
+
+
+
+.heading{
+	margin-top:-120px;
+	
+}
+.tab{
+	margin-top:-20px;
+	background:black;
+	
+	height:50px;
+	width:1500px;
+}
+.tab input[type="button"]
+{
+	
+	border:none;
+	outline:none;
+	height:40px;
+	background:#c2786c	;
+	font-size:16px;
+	margin:5px 0px 0px 4px;
+	width:150px;
+	border-radius:5px;
+}
+.tab input[type="button"]:hover
+{
+	cursor:pointer;
+	background:#28B463;
+	color:white;
+}
+.tabl{
+
+	background:black;
+	height:286px;
+	width:1500px;
+	opacity:1.0;
+	border-radius:40px;
+	position:absolute;
+	
+	
+}
+.table{
+	border:1px solid white;
+	color:black;
+	background:white;
+	border-radius:10px;
+	width:700px;
+	margin:40px 0px 0px 40px;
+	text-align:center;
+	font-size:18px;
+
+}
+.ta{
+	border:1px solid white;
+	color:black;
+	background:white;
+	border-radius:10px;
+	width:700px;
+	margin:-24px 10px 0px 760px;
+	text-align:center;
+	font-size:18px;
+}
+
+h3{
+	margin:300px 0px 0px 0px;
+	font-size:25px;
+}
+.detail1{
+	border:2px solid black;
+	background:#c2786c;
+	height:auto;
+	width:1500px;
+	color:black;
+	font-size:20px;
+	margin:-280px 0px 0px 0px;
+	text-align:;
+	border-radius:20px;
+}
+
+.detail2{
+	border:2px solid black;
+	background:#c2786c;
+	height:auto;
+	width:1500px;
+	color:black;
+	font-size:20px;
+	margin:0px 0px 0px 0px;
+	text-align:;
+	border-radius:20px;
+}
+
+.detail3{
+	border:2px solid black;
+	background:#c2786c;
+	height:auto;
+	width:1500px;
+	color:black;
+	font-size:20px;
+	margin:0px 0px 0px 0px;
+	text-align:;
+	border-radius:20px;
+
+}
+
+
+.detail4{
+	border:2px solid black;
+	background:;
+	height:auto;
+	width:1500px;
+	color:black;
+	font-size:20px;
+	margin:0px 0px 0px 0px;
+	text-align:;
+	border-radius:20px;
+}
+
+.detail5{
+	border:2px solid black;
+	background:#c2786c;
+	height:auto;
+	width:1500px;
+	color:black;
+	font-size:20px;
+	margin:0px 0px 0px 0px;
+	text-align:;
+	border-radius:20px;
+}
+
+.detail6{
+	border:2px solid black;
+	background:#c2786c;
+	height:auto;
+	width:1500px;
+	color:black;
+	font-size:20px;
+	margin:0px 0px 0px 0px;
+	text-align:;
+	border-radius:20px;
+}
+.bottom{
+	margin-top:1%;
+	background:black;
+	height:100px;
+	width:100%;
+	COLOR:grey;
+	text-align:center;
+	font-size:15px;
+	
+}
+
+.bottom input[type="submit"]{
+	color:white;
+	background:red;
+	width:150px;
+	outline:none;
+	border:none;
+	height:30px;
+	border-radius:30px;
+}
+
+.bottom input[type="submit"]:hover{
+	color:white;
+	background:green;
+	width:150px;
+	outline:none;
+	border:none;
+	height:30px;
+	border-radius:30px;
+}

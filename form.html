@@ -1,0 +1,163 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\regist\form.css" />
+	</head>
+	<body>
+	<div class="main">
+	<a href="register.html">
+	<img src="C:\Users\gaurav\Desktop\Stet Sasti\simplestyle_horizon\logo.jpg" height="186px" width="250px">
+	</a>
+			<div class="heading">
+				<center><font size="100px"> <u> STET OFFICIAL(GOVT.OF SIKKIM)</U></font></center>
+				<center><h2> STATE TEACHER ELIGIBILITY TEST	</h2></center>
+			</div><br>
+		<div class="tab">
+
+				<a href="register.html"><input type="button" value="Home"></a>
+		</div>
+		<h2><b class="bl"><u><center>REGISTRATION</center></u></b></h2>
+
+		<div class="form1">
+
+				<h3>Personal Details</h3>
+				<p><b>First Name</B></p>
+				<input type="text" placeholder="Enter your first name" name="fname"  id="first">
+
+				<p><b>Last Name</b></p>
+				<input type="text" placeholder="Enter your last name" name="lname" id="last" >
+
+				<p><b>D.O.B</b></p>
+				<input type="date" name="date" placeholder="Enter your DOB" id="date" >
+
+		</div>
+			<div class="form2">
+
+				<p><b>Father Name</B></p>
+				<input type="text" placeholder="Enter your father name" name="fname"  id="fname"><br>
+
+				<p><b>Mother Name</p></b>
+				<input type="text" placeholder="Enter your mother name" name="lname" id="mname" ><br>
+
+				<p><b>Gender</p></b>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender"value="male" id="male">Male
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="female" id="female">Female
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="Other" id="other">Other
+
+		</div><br><br><br><br><br><br><br>
+		<!-- <div class="form3"> -->
+		<div class="form1">
+
+				<h3>Contact Details</h3>
+				<p><b>Address</B></p>
+				<input type="textarea" placeholder="Enter your Address" name="address"  id="address">
+
+				<p><b>City/Town</b></p>
+				<input type="text" placeholder="Enter your City/Town" name="city" id="city">
+
+				<p><b>PinCode</b></p>
+				<input type="text" placeholder="Enter your Pincode" name="pincode" id="pincode">
+
+		</div>
+			<div class="form2">
+
+				<p><b>Email</B></p>
+				<input type="Email" placeholder="Enter your Email" name="email" id="email"><br><br>
+
+				<p><b>Mobile Number</p></b>
+				<input type="text" placeholder="Enter your mobile number" name="mobile" id="mob" maxlength="10"><br>
+
+				<!-- <p><b></p></b> -->
+				<!-- <input type="text" placeholder="enter your Email" name="email" id="email" > -->
+
+		</div><br><br><br><br><br><br><br>
+
+		<!-- </div>	 -->
+		<div class="form1">
+
+				<h3> &nbsp&nbspSet Password</h3>
+
+				<p><b>Password</B></p>
+				<input type="password" placeholder="Enter your password here" name="password"  id="password">
+
+				<p><b>Select Security Question?</b></p>
+				<select id="ques">
+            <option value="" selected disabled hidden>--Select--</option>
+            <option value="1">Voter ID</option>
+            <option value="2">Passport</option>
+            <option value="3">Bank PassBook With Photoghraph</option>
+            <option value="4">Ration Card With Photoghraph</option>
+            <option value="5">Other Valid Govt Identity With Photoghraph</option>
+            <option value="1">Driving Licence</option>
+            </select>
+
+		</div>
+			<div class="form2">
+
+				<br><br><br><p><b>Confirm Password</B></p>
+				<input type="password" placeholder="Enter your password here" name="cpassword"  id="cpass"><br>
+
+				<p><b>Select Security Answer</p></b>
+				<select id="ans">
+            <option>---Select---</option>
+            <option value="1">what is your first school name?</option>
+            <option value="2">what is your favourite book?</option>
+            <option value="3">what is your neighbour's pet name?</option>
+            <option value="4">Ration Card With Photoghraph</option>
+            <option value="5">what is your registration no of your first vehicle</option>
+            </select>
+
+		</div><br><br><br><br><br><br><<br>
+		<center><input type="submit" id="inp" value="SUBMIT"></center>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyBOIBOSWlI24mVh2bfcqpleovtT2IfZTtE",
+				authDomain: "test1-ccf67.firebaseapp.com",
+				databaseURL: "https://test1-ccf67.firebaseio.com",
+				projectId: "test1-ccf67"
+			};
+			firebase.initializeApp(config);
+
+			// make auth and firestore references
+			const auth = firebase.auth();
+			const db = firebase.firestore();
+			db.settings({ timestampsInSnapshots: true });
+
+		</script>
+		<script src="input.js" charset="utf-8"></script>
+		<script type="text/javascript">
+		auth.onAuthStateChanged(user => {
+		if (user)
+		{
+			// currentUser=user
+			// user.getIdTokenResult().then(idTokenResult =>
+			// 	{
+			// 		console.log("on auth state change "+idTokenResult.claims.admin)
+			// 		user.admin = idTokenResult.claims.admin;
+			// 		console.log(user)
+			// 	});
+			//
+			auth.signOut();
+				window.location.assign('login.html')
+			}
+
+		else
+		{
+
+		}
+		});
+		</script>
+</body>
+
+		</body>
+
+
+
+</html>

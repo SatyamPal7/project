@@ -1,0 +1,118 @@
+
+
+.heading{
+	margin-top:-120px;
+}
+.tab{
+	margin-top:-20px;
+	background:black;
+	
+	height:50px;
+	width:1500px;
+}
+.tab input[type="button"]
+{
+	
+	border:none;
+	outline:none;
+	height:40px;
+	background:#c2786c	;
+	font-size:16px;
+	margin:5px 0px 0px 4px;
+	width:150px;
+	border-radius:5px;
+}
+.tab input[type="button"]:hover
+{
+	cursor:pointer;
+	background:#28B463;
+	color:white;
+}
+.bl{
+	text-shadow:0px 2px 2px;
+}
+
+.form1{
+	background:white;
+	border:6px solid grey;
+	border-radius:10px;
+	width:1200px;
+	margin:0px 0px 0px 160px;
+	
+	
+	
+}
+h3{
+	margin:-12px 0px 0px 20px;
+	background:white;
+	width:132px;	
+}
+p{
+	margin:10px 0px 10px 30px;
+	
+}
+.form1 input[type="text"],input[type="date"],input[type="textarea"],input[type="Email"],input[type="password"]
+{
+	margin-top:5px;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid black;
+	font-size:16px;
+	height:20px;
+	color:black;
+	outline:none;
+	margin:0px 0px 5px 40px;
+	width:500px;
+}
+.form2{
+	margin:-195px 10px 0px 800px;
+	width:auto;
+	height:80px	;
+}
+.form2 input[type="text"],input[type="password"]
+{
+	margin-top:5px;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid black;
+	font-size:16px;
+	height:20px;
+	color:black;
+	outline:none;
+	margin:0px 0px 5px 40px;
+	width:500px;
+}
+
+
+ input[type="submit"]
+ {
+	 width:400px;
+	 height:30px;
+	 border-radius:20px;
+	 outline:none;
+	 border:none;
+	 background:grey;
+ }
+ input[type="submit"]:hover{
+	 width:400px;
+	 height:30px;
+	 border-radius:20px;
+	 outline:none;
+	 border:none;
+	 background:green;
+	 color:white;
+ }
+ 
+ select{
+	 
+	 margin-top:5px;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid black;
+	font-size:16px;
+	height:20px;
+	color:black;
+	outline:none;
+	margin:0px 0px 5px 40px;
+	width:500px;
+ }

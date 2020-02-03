@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="contact_1.css" />
+  </head>
+  <body>
+  <div class="main">
+  <a href="file:///C:/xampp/htdocs/regist/register.html">
+  <img src="logo.jpg" height="186px" width="250px">
+  </a>
+      <div class="heading">
+        <center><font size="100px"> <u> STET OFFICIAL(GOVT.OF SIKKIM)</u></font></center>
+        <center><h2> STATE TEACHER ELIGIBILITY TEST </h2></center>
+      </div><br>
+<div id="content" style="align-content: center;">
+        <!-- insert the page content here -->
+          <h1><u><strong>Contact Us</strong></u></h1>
+        <!--<p>Below is an example of how a contact form might look with this template:</p> -->
+          <div class="form_settings">
+            <p><span>Name:  </span><input class="contact" type="text"  id="name"></p>
+            <br>
+            <p><span>Email Address: </span><input class="contact" type="email" id="email"></p><br>
+              <span>Message: </span><input class="contact" type="textarea" id="message"><br>
+            <!--<span>Message: </span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"/> -->
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" id='submit'></p>
+          </div>
+        <p><br /><br />NOTE: A contact form such as this would require some way of emailing the input to an email address.</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    const btn = document.getElementById('submit')
+
+    btn.addEventListener('click', () => {
+
+      const from = document.getElementById('email').value
+      const text = document.getElementById('message').value
+      const name = document.getElementById('name').value
+      const data = {
+        from: name + ' ' + '<' + from + '>',
+        to: 'gaurabhkumar750@gmail.com',
+        subject: 'HEllloo',
+        text: text
+      };
+      console.log(name + ' <' + from + '>')
+      console.log("Button clicked")
+      fetch('https://allahmeetsram.herokuapp.com/email'
+        // fetch('http://localhost:2000/message'
+        , {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }
+      ).then(function(response) {
+        return response.json()
+      }).then(data => console.log(data))
+    })
+  </script>
+</body>
+</html>
