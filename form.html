@@ -77,40 +77,57 @@
 				<h3> &nbsp&nbspSet Password</h3>
 
 				<p><b>Password</B></p>
-				<input type="password" placeholder="Enter your password here"  id="password">
+				<input type="password" placeholder="Enter your password here" name="password"  id="password">
 
-				<p><b>Select Security Question?</b></p>
-				<select id="ques">
-            <option value="" selected disabled hidden>--Select--</option>
-            <option value="1">Voter ID</option>
-            <option value="2">Passport</option>
-            <option value="3">Bank PassBook With Photoghraph</option>
-            <option value="4">Ration Card With Photoghraph</option>
-            <option value="5">Other Valid Govt Identity With Photoghraph</option>
-            <option value="1">Driving Licence</option>
-            </select>
 
 		</div>
-			<div class="form2">
+			<div class="form4">
 
 				<br><br><br><p><b>Confirm Password</B></p>
-				<input type="password" placeholder="Enter your password here"  id="cpass"><br>
-
-				<p><b>Select Security Answer</p></b>
-				<select id="ans">
-            <option>---Select---</option>
-            <option value="1">what is your first school name?</option>
-            <option value="2">what is your favourite book?</option>
-            <option value="3">what is your neighbour's pet name?</option>
-            <option value="4">Ration Card With Photoghraph</option>
-            <option value="5">what is your registration no of your first vehicle</option>
-            </select>
+				<input type="password" placeholder="Enter your password here" name="cpassword"  id="cpass"><br>
 
 		</div><br><br><br><br><br><br><<br>
-		<center><input type="submit" id="inp" value="SUBMIT"></center>
+		<center><input type="submit" id="inp" onclick="validation()"></center>
 	</div>
 
+<script type="text/javascript">
+	function validation(){
 
+
+        var password1= document.getElementById("password").value;
+				var password2 = document.getElementById('cpass').value;
+
+
+
+				var n = password1.length;
+        var m = password2.length;
+
+
+
+
+				if(n === 0 && m ==0)
+			 alert("Please enter password");
+
+
+
+
+				else if(n < 5 && m < 5)
+				alert("Password should be of 6 digit");
+
+
+
+
+
+				else if( password1 != password2)
+				alert("Password did not match");
+
+
+				return false;
+
+
+
+	}
+</script>
 	<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
@@ -133,31 +150,6 @@
 		</script>
 		<script src="input.js" charset="utf-8"></script>
 		<script type="text/javascript">
-
-        var password1 = document.getElementById("password").value;
-				var password2 = document.getElementById("cpass").value;
-				 var n = password1.length;
-				 var m = password2.lenght;
-
-
-				 if(n < 5 && m <5)
-      {
-				 alert("Password should be of 6 digits");
-
-
-				 elser if ( n == '')
-
-
-
-				 return false;
-
-
-
-
-			 }
-
-
-
 		auth.onAuthStateChanged(user => {
 		if (user)
 		{

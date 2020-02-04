@@ -6,13 +6,13 @@
 .tab{
 	margin-top:-20px;
 	background:black;
-	
+
 	height:50px;
 	width:1500px;
 }
 .tab input[type="button"]
 {
-	
+
 	border:none;
 	outline:none;
 	height:40px;
@@ -38,18 +38,18 @@
 	border-radius:10px;
 	width:1200px;
 	margin:0px 0px 0px 160px;
-	
-	
-	
+
+
+
 }
 h3{
 	margin:-12px 0px 0px 20px;
 	background:white;
-	width:132px;	
+	width:132px;
 }
 p{
 	margin:10px 0px 10px 30px;
-	
+
 }
 .form1 input[type="text"],input[type="date"],input[type="textarea"],input[type="Email"],input[type="password"]
 {
@@ -102,9 +102,9 @@ p{
 	 background:green;
 	 color:white;
  }
- 
+
  select{
-	 
+
 	 margin-top:5px;
 	background:transparent;
 	border:none;
@@ -115,4 +115,24 @@ p{
 	outline:none;
 	margin:0px 0px 5px 40px;
 	width:500px;
+ }
+
+
+ .form4{
+ 	margin:-125px 10px 0px 800px;
+ 	width:auto;
+ 	height:80px	;
+ }
+ .form4 input[type="password"]
+ {
+ 	margin-top:5px;
+ 	background:transparent;
+ 	border:none;
+ 	border-bottom:2px solid black;
+ 	font-size:16px;
+ 	height:20px;
+ 	color:black;
+ 	outline:none;
+ 	margin:0px 0px 5px 40px;
+ 	width:500px;
  }
