@@ -152,30 +152,8 @@
 			db.settings({ timestampsInSnapshots: true });
 
 		</script>
-		<script src="form.js" charset="utf-8"></script>
-		<script type="text/javascript">
-		auth.onAuthStateChanged(user => {
-		if (user)
-		{
-			// currentUser=user
-			// user.getIdTokenResult().then(idTokenResult =>
-			// 	{
-			// 		console.log("on auth state change "+idTokenResult.claims.admin)
-			// 		user.admin = idTokenResult.claims.admin;
-			// 		console.log(user)
-			// 	});
-			//
-			auth.signOut();
-				window.location.assign('login.html')
-			}
-
-		else
-		{
-
-		}
-		});
-		</script>
-
+		<script src="input.js" charset="utf-8"></script>
+		
 
 
 

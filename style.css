@@ -1,17 +1,19 @@
-
+body{
+	background-color: beige;
+}
 .heading{
 	margin-top:-124px;
 }
 .tab{
 	margin-top:-20px;
 	background:black;
-	
+
 	height:50px;
 	width:1500px;
 }
 .tab input[type="button"]
 {
-	
+
 	border:none;
 	outline:none;
 	height:40px;
