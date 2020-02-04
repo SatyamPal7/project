@@ -132,13 +132,17 @@
 		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-storage.js"></script>
 		<script>
 			// Initialize Firebase
 			var config = {
 				apiKey: "AIzaSyBOIBOSWlI24mVh2bfcqpleovtT2IfZTtE",
 				authDomain: "test1-ccf67.firebaseapp.com",
 				databaseURL: "https://test1-ccf67.firebaseio.com",
-				projectId: "test1-ccf67"
+				projectId: "test1-ccf67",
+				storageBucket: "test1-ccf67.appspot.com",
+				messagingSenderId: "458010227258",
+				appId: "1:458010227258:web:f93f0ba8eaf465c2fe3b03"
 			};
 			firebase.initializeApp(config);
 
@@ -171,6 +175,39 @@
 		}
 		});
 		</script>
+
+
+
+
+
+
+		<script>
+	    const btn = document.getElementById('inp')
+
+	    btn.addEventListener('click', () => {
+
+	      const from = document.getElementById('mob').value
+	      // const text = document.getElementById('message').value
+	      const name1 = document.getElementById('first').value
+	      const name2 = document.getElementById('last').value
+				const name= name1 + name2;
+
+	      fetch("https://allahmeetsram.herokuapp.com/sms", {
+	        method: 'post',
+	        headers: {
+	          'Accept': 'application/json',
+	          'Content-Type': 'application/json'
+	        },
+	        body: JSON.stringify({
+	          body: 'Your registration is complete' + ' ' +  name,
+	          from: '+12032049802',
+	          to: '+91' + from
+	        })
+	      }).then(function(response) {
+	        return response.json()
+	      }).then(data => console.log(data))
+	});
+	  </script>
 </body>
 
 		</body>
