@@ -77,7 +77,7 @@
 				<h3> &nbsp&nbspSet Password</h3>
 
 				<p><b>Password</B></p>
-				<input type="password" placeholder="Enter your password here" name="password"  id="password">
+				<input type="password" placeholder="Enter your password here"  id="password">
 
 				<p><b>Select Security Question?</b></p>
 				<select id="ques">
@@ -94,7 +94,7 @@
 			<div class="form2">
 
 				<br><br><br><p><b>Confirm Password</B></p>
-				<input type="password" placeholder="Enter your password here" name="cpassword"  id="cpass"><br>
+				<input type="password" placeholder="Enter your password here"  id="cpass"><br>
 
 				<p><b>Select Security Answer</p></b>
 				<select id="ans">
@@ -133,6 +133,31 @@
 		</script>
 		<script src="input.js" charset="utf-8"></script>
 		<script type="text/javascript">
+
+        var password1 = document.getElementById("password").value;
+				var password2 = document.getElementById("cpass").value;
+				 var n = password1.length;
+				 var m = password2.lenght;
+
+
+				 if(n < 5 && m <5)
+      {
+				 alert("Password should be of 6 digits");
+
+
+				 elser if ( n == '')
+
+
+
+				 return false;
+
+
+
+
+			 }
+
+
+
 		auth.onAuthStateChanged(user => {
 		if (user)
 		{
