@@ -22,8 +22,7 @@ function writeData() {
 
   //password
   var password = document.getElementById("password").value;
-  // var secques= document.getElementById("ques").value;
-  // var answer = document.getElementById("ans").value;
+  
 
   auth.createUserWithEmailAndPassword(email, password).then(cred => {
     console.log(cred)
@@ -41,7 +40,7 @@ function writeData() {
       Pincode:        pincode,
       Email:          email,
       Mobile:         mobile,
-      
+
     });
   }).then(ref => {
     // close the signup modal & reset form
