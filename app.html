@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 
-<body>
+<body background="beige">
 	<div class="main">
 		<a href="index.html">
 			<img src="logo.jpg" height="186px" width="250px">
@@ -23,7 +23,7 @@
 			<!-- <a href=""><input type="button" value=" Result"></a> -->
 
 			<a href="https://digilocker.gov.in/"><input type="button" value="DigiLocker"></a>
-			<!-- <a href="contact1.html"><input type="button" value="Contact Us"></a> -->
+			<a href="contact_1.html"><input type="button" value="Contact Us"></a>
 			<!-- <a href=""><input type="button" value="About"></a> -->
 
 		</div><br>
@@ -42,37 +42,37 @@
 
 							<tr>
 								<td> <label><b>Candidate's Name:</b></label></td>
-								<td><input type="text" placeholder="Candidate's Name" id="person"></td>
+								<td><input type="text" placeholder="Candidate's Name" id="name"></td>
 
 								<td><b>Date of Birth</b></td>
-								<td><input type="date"></td>
+								<td><input type="date" id="date"></td>
 
 							</tr>
 							<tr>
 
 								<td> <label><b>Father's Name:</b></label></td>
-								<td><input type="text" placeholder="Father's Name" id="name"></td>
+								<td><input type="text" placeholder="Father's Name" id="fname"></td>
 
 								<td> <label><b>Mother's Name:</b></label></td>
-								<td><input type="text" placeholder="Mother's Name" id="name"></td>
+								<td><input type="text" placeholder="Mother's Name" id="mname"></td>
 
 
 
 							</tr>
 							<tr>
 								<td><b>Nationality:</b></td>
-								<td><select>
+								<td><select id="nation">
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">Indian</option>
+										<option value="indian">Indian</option>
 									</select></td>
 
 								<td><b>Category:</b></td>
-								<td><select>
+								<td><select id="cate">
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">General</option>
-										<option value="2">SC</option>
-										<option value="2">ST</option>
-										<option value="2">OBC-NCL</option>
+										<option value="general">General</option>
+										<option value="sc">SC</option>
+										<option value="st">ST</option>
+										<option value="obc-ncl">OBC-NCL</option>
 									</select></td>
 							</tr>
 
@@ -80,79 +80,51 @@
 							<tr>
 
 								<td><b>Language1:</b></td>
-								<td class="c5"><select>
+								<td id="lang"><select>
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">English</option>
-										<option value="2">Hindi</option>
-										<option value="1">Nepali</option>
-										<option value="2">Sikkimese</option>
-										<option value="1">Lepcha</option>
-										<option value="2">Gurung</option>
-										<option value="1">Limbu</option>
-										<option value="2">Magar</option>
-										<option value="1">Mukhia</option>
-										<option value="2">Newari</option>
-										<option value="1">Rai</option>
-										<option value="2">Sherpa</option>
-										<option value="1">Tamang</option>
+										<option value="" selected disabled hidden>--Select--</option>
+										<option value="english">English</option>
+										<option value="hindi">Hindi</option>
+										<option value="sikkimese">Sikkimese</option>
+
 									</select></td>
 
 								<td><b>Language2:</b></td>
-								<td class="c6"><select>
+								<td id="lang1"><select>
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">English</option>
-										<option value="2">Hindi</option>
-										<option value="1">Nepali</option>
-										<option value="2">Sikkimese</option>
-										<option value="1">Lepcha</option>
-										<option value="2">Gurung</option>
-										<option value="1">Limbu</option>
-										<option value="2">Magar</option>
-										<option value="1">Mukhia</option>
-										<option value="2">Newari</option>
-										<option value="1">Rai</option>
-										<option value="2">Sherpa</option>
-										<option value="1">Tamang</option>
+										<option value="english">English</option>
+										<option value="hindi">Hindi</option>
+										<option value="sikkimese">Sikkimese</option>
+
+
 									</select></td>
 
 							</tr>
 							<tr>
-								<td class="c7"><b>Gender:</b></td>
-								<td><select>
+								<td><b>Gender:</b></td>
+								<td><select id="gen">
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">Male</option>
-										<option value="2">Female</option>
-										<option value="3">Transgender</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
+										<option value="other">Other</option>
 									</select></td>
 
 								<td><b>Employement Status:</b></td>
-								<td><select>
+								<td><select id="employ">
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">Not Employed</option>
-										<option value="2">Employed as Teacher</option>
-										<option value="1">Employed other Than Teacher</option>
+										<option value="Not Employed">Not Employed</option>
+										<option value="Employed as Teacher">Employed as Teacher</option>
+										<option value="Employed other Than Teacher">Employed other Than Teacher</option>
 									</select></td>
 
 							</tr>
 							<tr>
 								<td><b>Person with Disability(pwD):</b></td>
-								<td><select>
+								<td><select id="pwd">
 										<option value="" selected disabled hidden>--Select--</option>
-										<option value="1">Yes</option>
-										<option value="2">NO</option>
+										<option value="Yes">Yes</option>
+										<option value="NO">NO</option>
 									</select></td>
-
-							</tr>
-
-
-							<tr>
-
-
-
-								<td> <label><b>Mobile Number:</b></label></td>
-								<td><input type="text" placeholder="Mobile" id="phone" maxlength="10"></td>
-
-
 
 							</tr>
 						</table>
@@ -171,29 +143,25 @@
 
 								<tr>
 									<td><b>Applying For:</b></td>
-									<td><select>
+									<td><select id="apply">
 											<option value="" selected disabled hidden>--Select--</option>
-											<option value="1">Paper-1(class 1-5)</option>
-											<option value="2">Paper-2(Class 6-8)</option>
-											<option value="1">paper-3(Class upto 12th)</option>
-											<option value="2">all</option>
+											<option value="Paper-1(class 1-5)">Paper-1(class 1-5)</option>
+											<option value="Paper-2(Class 6-8)">Paper-2(Class 6-8)</option>
+											<option value="paper-3(Class upto 12th)">paper-3(Class upto 12th)</option>
+											<option value="all">all</option>
 
 										</select></td>
 
 
 
-									<td><b>Minimum Edcation Qualification For Class 1st to 5th:</b></td>
+									<td><b>Minimum Education Qualification For Class 1st to 5th:</b></td>
 									<td><select>
 											<option value="" selected disabled hidden>--Select--</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
-											<option value="1">3</option>
-											<option value="2">4</option>
-											<option value="1">5</option>
-											<option value="2">6</option>
-											<option value="1">7</option>
-											<option value="2">8</option>
-											<option value="1">9</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
 										</select></td>
 								</tr>
 
@@ -203,13 +171,13 @@
 											<option value="" selected disabled hidden>--Select--</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
-											<option value="1">3</option>
-											<option value="2">4</option>
-											<option value="1">5</option>
-											<option value="2">6</option>
-											<option value="1">7</option>
-											<option value="2">8</option>
-											<option value="1">9</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
 										</select></td>
 
 									<td><b>Minimum Edcation Qualification For Classupto 12th:</b></td>
@@ -217,41 +185,41 @@
 											<option value="" selected disabled hidden>--Select--</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
-											<option value="1">3</option>
-											<option value="2">4</option>
-											<option value="1">5</option>
-											<option value="2">6</option>
-											<option value="1">7</option>
-											<option value="2">8</option>
-											<option value="1">9</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
 										</select></td>
 
 
 								</tr>
 								<tr>
 									<td><b>Student offered for Paper-2:</b></td>
-									<td><select>
+									<td><select id="offer">
 											<option value="" selected disabled hidden>--Select--</option>
-											<option value="1">Mathematics & Science</option>
-											<option value="2">Social Science</option>
+											<option value="Mathematics & Science">Mathematics & Science</option>
+											<option value="Social Science">Social Science</option>
 
 										</select></td>
 
 
 									<td><b>Exam Center:</b></td>
-									<td><select>
+									<td><select id="center">
 											<option value="" selected disabled hidden>--Select--</option>
-											<option value="1">Gangtop</option>
+											<option value="Gangtok">Gangtok</option>
 
 										</select></td>
 								</tr>
 								<tr>
 
 									<td><b>Question Paper Medium:</b></td>
-									<td><select>
+									<td><select id="med">
 											<option value="" selected disabled hidden>--Select--</option>
-											<option value="1">English</option>
-											<option value="2">Hindi</option>
+											<option value="English">English</option>
+											<option value="Hindi">Hindi</option>
 
 										</select></td>
 
@@ -278,33 +246,39 @@
 
 								<tr>
 									<td> <label><b>Upload Photo:</b></label></td>
-									<td><input type="file" placeholder="upload here" id="fileButton" value="upload1"></td>
+									<td><input type="file" placeholder="upload here"></td>
 
 									<td> <label><b>Upload signature:</b></label></td>
-									<td><input type="file" placeholder="upload here" id="fileButton1" value="upload2"></td>
+									<td><input type="file" placeholder="upload here"></td>
 							</table>
 							</b>
 					</form>
 			</fieldset>
-
-			<fieldset>
-				<legend><b>DigiLocker Documents Links</b></legend>
-				<table border="0">
-					<form>
-
-							<table align="center" cellpadding="10" cellspacing="10">
-
-							
-									<td> <label><b>Share your document URL here:</b></label></td>
-									<td><input type="text" placeholder="share here" id="doc"></td>
-							</table>
-							</b>
-					</form>
-			</fieldset>
-
-
+			<br />
 			<br />
 
+
+			<fieldset>
+				<legend><b>Digilocker Documents Link</b></legend>
+				<table border="0">
+					<form>
+						<table align="center" cellpadding="5" cellspacing="15">
+
+
+							<tr>
+								<td><b>Share your Documnet URL here</b></td>
+								<td>
+									<input type="text" placeholder="Share Here" id="doc">
+								</td>
+
+							</tr>
+
+
+
+						</table>
+						</b>
+					</form>
+			</fieldset>
 
 			<br />
 
@@ -323,19 +297,9 @@
 											<th>Course/Stream Name</th>
 											<th>Board/University Name</th>
 											<th>Year of Passing</th>
-											<!--<th>Result Mode</th>-->
-											<th>Marks Details</th>
-											<!--<th>Institude Pin Code</th>-->
++											<th>Marks Details</th>
 										</tr>
 									</thead>
-									<!--<tfoot>
-<tr>
-<td colspan="8">
-<div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a>
-<a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a> <a href="#">&raquo;</a></div>
-</td>
-</tr>
-</tfoot>-->
 									<tbody>
 										<tr>
 											<td rowspan="4">Degree in Education(in accordance with the Prescribed Mininimum Qualification)</td>
@@ -343,196 +307,85 @@
 
 
 
-											<td rowspan="4"><select>
+											<td rowspan="4"><select id="appear">
 													<option value="" selected disabled hidden>--Select--</option>
-													<option value="1">Passed</option>
-													<option value="2">Appearing</option>
+													<option value="Passed">Passed</option>
+													<option value="Appearing">Appearing</option>
 												</select></td>
 
 
 
-											<td rowspan="4"><select>
+											<td rowspan="4"><select id="course">
 													<option value="" selected disabled hidden>--Select--</option>
-													<option value="1">Education/Elementry Education etc</option>
+													<option value="Education/Elementry Education etc">Education/Elementry Education etc</option>
 												</select></td>
 
-											<td rowspan="4"><input type="text" placeholder="Board/University Name" id="name"></td>
+											<td rowspan="4"><input type="text" placeholder="Board/University Name" id="board"></td>
 
 
 
-											<td rowspan="4"><select>
+											<td rowspan="4"><select id="year">
 													<option value="" selected disabled hidden>--Select--</option>
-													<option value="1">2010</option>
-													<option value="2">2011</option>
-													<option value="1">2012</option>
-													<option value="2">2013</option>
-													<option value="1">2014</option>
-													<option value="2">2015</option>
-													<option value="1">2016</option>
-													<option value="2">2017</option>
-													<option value="1">2018</option>
-													<option value="2">2019</option>
+													<option value="2010">2010</option>
+													<option value="2011">2011</option>
+													<option value="2012">2012</option>
+													<option value="2013">2013</option>
+													<option value="2014">2014</option>
+													<option value="2015">2015</option>
+													<option value="2016">2016</option>
+													<option value="2017">2017</option>
+													<option value="2018">2018</option>
+													<option value="2019">2019</option>
 												</select></td>
-
-
-
-											<!-- <td><select>
-            <option value="" selected disabled hidden>--Select--</option>
-            <option value="1">Percentage%</option>
-            </select></td>-->
-
 
 										<tr>
 
-											<td><input type="text" placeholder="Obtained Marks" id="number"></td>
+											<td><input type="text" placeholder="Obtained Marks" id="obt"></td>
 											</td>
 										</tr>
 
 										<tr>
 
 
-											<td><input type="text" placeholder="Total Marks" id="number"></td>
+											<td><input type="text" placeholder="Total Marks" id="total"></td>
 										</tr>
 
 										<tr>
 
-											<td><input type="text" placeholder=" Marks" id="number"></td>
+											<td><input type="text" placeholder=" percentage" id="percent"></td>
 										</tr>
 
-										<!-- <td><input type="text" placeholder="pincode" id="number"></td>-->
-
 						</tr>
-
 						</tbody>
 				</table>
-
-
-
 				</form>
 				</table>
 			</fieldset><br />
 
-			<input class="button" type="submit" name="SUBMIT" id="submit">
+			<input class="button" type="submit" name="SUBMIT" id="store">
 
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
-			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-storage.js"></script>
 			<script>
 				// Initialize Firebase
-
-				// Your web app's Firebase configuration
-				var firebaseConfig = {
+				var config = {
 					apiKey: "AIzaSyBOIBOSWlI24mVh2bfcqpleovtT2IfZTtE",
 					authDomain: "test1-ccf67.firebaseapp.com",
 					databaseURL: "https://test1-ccf67.firebaseio.com",
-					projectId: "test1-ccf67",
-					storageBucket: "test1-ccf67.appspot.com",
-					messagingSenderId: "458010227258",
-					appId: "1:458010227258:web:f93f0ba8eaf465c2fe3b03"
+					projectId: "test1-ccf67"
 				};
-				// Initialize Firebase
-				firebase.initializeApp(firebaseConfig);
+				firebase.initializeApp(config);
 
-
-				var uploader = document.getElementById('upload1');
-				var fileButton = document.getElementById("fileButton");
-
-				var store = firebase.storage();
-
-
-
-				fileButton.addEventListener('change', function(e) {
-
-
-					var file = e.target.files[0];
-					var storageRef = store.ref('photos/' + file.name);
-					storageRef.put(file);
-				});
-
-
-
-
-
-				var uploader1 = document.getElementById('upload2');
-				var fileButton2 = document.getElementById("fileButton1");
-
-				var store = firebase.storage();
-
-
-
-				fileButton1.addEventListener('change', function(e) {
-
-
-					var file1 = e.target.files[0];
-
-
-					var storageRef1 = store.ref('signature/' + file1.name);
-
-
-					storageRef1.put(file1);
-
-
-
+				// make auth and firestore references
+				const auth = firebase.auth();
+				const db = firebase.firestore();
+				db.settings({
+					timestampsInSnapshots: true
 				});
 			</script>
-
-
-
-
-
-
-
-
-
-			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script>
-    const btn = document.getElementById('submit')
-
-    btn.addEventListener('click', () => {
-
-      const from = document.getElementById('phone').value
-      // const text = document.getElementById('message').value
-      const name = document.getElementById('person').value
-      // const data = {
-      //   from: name + ' <' + from + '>',
-      //   to: 'satyamrajput799@gmail.com',
-      //   subject: 'HEllloo',
-      //   text: text
-      // };
-      //     console.log(name + ' <' + from + '>')
-      //     console.log("Button clicked")
-      //     fetch('https://allahmeetsram.herokuapp.com/message'
-      //     // fetch('http://localhost:2000/message'
-      //     , {
-      //       method: 'post',
-      //       headers: {
-      //         'Accept': 'application/json',
-      //         'Content-Type': 'application/json'
-      //       },
-      //       body: JSON.stringify(data)
-      //     }
-      //     ).then(function(response) {
-      //       return response.json()
-      //     }).then(data=>console.log(data))
-
-      fetch("https://allahmeetsram.herokuapp.com/sms", {
-        method: 'post',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          body: 'Your registration is complete' + ' ' +  name,
-          from: '+12032049802',
-          to: '+91' + from
-        })
-      }).then(function(response) {
-        return response.json()
-      }).then(data => console.log(data))
-});
-  </script>
+			<script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
