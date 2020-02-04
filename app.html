@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 
-<body background="beige">
+<body>
 	<div class="main">
 		<a href="index.html">
 			<img src="logo.jpg" height="186px" width="250px">
@@ -246,10 +246,10 @@
 
 								<tr>
 									<td> <label><b>Upload Photo:</b></label></td>
-									<td><input type="file" placeholder="upload here"></td>
+									<td><input type="file" placeholder="upload here" id="store1" value="uploader"></td>
 
 									<td> <label><b>Upload signature:</b></label></td>
-									<td><input type="file" placeholder="upload here"></td>
+									<td><input type="file" placeholder="upload here"  value='uploader1' id="store2"></td>
 							</table>
 							</b>
 					</form>
@@ -368,15 +368,77 @@
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 			<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+				<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-storage.js"></script>
 			<script>
 				// Initialize Firebase
 				var config = {
 					apiKey: "AIzaSyBOIBOSWlI24mVh2bfcqpleovtT2IfZTtE",
 					authDomain: "test1-ccf67.firebaseapp.com",
 					databaseURL: "https://test1-ccf67.firebaseio.com",
-					projectId: "test1-ccf67"
+					projectId: "test1-ccf67",
+					storageBucket: "test1-ccf67.appspot.com",
+					messagingSenderId: "458010227258",
+					appId: "1:458010227258:web:f93f0ba8eaf465c2fe3b03"
 				};
 				firebase.initializeApp(config);
+
+
+
+
+
+
+				    var uploader = document.getElementById('upload');
+				    var fileButton = document.getElementById("store1");
+
+				    var s = firebase.storage();
+
+
+
+				    fileButton.addEventListener('change' , function(e){
+
+
+				     var file = e.target.files[0];
+
+
+				     var storageRef = s.ref('photo/' + file.name);
+
+
+				     storageRef.put(file);
+
+
+				   });
+
+
+
+
+
+					 var uploader1 = document.getElementById('upload1');
+					 var fileButton1 = document.getElementById("store2");
+
+
+
+					 fileButton1.addEventListener('change' , function(e){
+
+
+ 					 var file1 = e.target.files[0];
+
+
+ 					 var storageRef = s.ref('signature/' + file1.name);
+
+
+ 					 storageRef.put(file1);
+
+
+ 				 });
+
+
+
+
+
+
+
+
+
 
 				// make auth and firestore references
 				const auth = firebase.auth();

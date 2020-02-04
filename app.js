@@ -1,4 +1,4 @@
-const store = document.getElementById('store')
+const store = document.getElementById('store');
 store.addEventListener('click', st)
 
 function st() {
